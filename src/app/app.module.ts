@@ -1,20 +1,24 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
 import {ButtonModule} from "primeng/button";
+
+import {TarefasModule} from "./modules";
 
 @NgModule({
   declarations: [
     AppComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        ButtonModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ButtonModule,
+    TarefasModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
