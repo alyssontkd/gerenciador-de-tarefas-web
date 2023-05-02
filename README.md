@@ -28,6 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## instalar o PrimNg: Adicionar no package.json e rodar 
 `npm i primeng primeflex primeicons --save`
+`npm i @angular/animations --save`
 
 ```
 "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
