@@ -1,7 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
-@import "primeng/resources/themes/lara-light-blue/theme.css";
+//@import "bootstrap/dist/css/bootstrap.css";
 @import "primeng/resources/primeng.css";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeflex/primeflex";
+//@import "design-token";
+
+.font-chivo {
+  font-family: Chivo, sans-serif;
+}
+
+.font-inter {
+  font-family: Inter, sans-serif;
+}
+
+.font-quick {
+  font-family: Quicksand, sans-serif;
+}
+
+.font-roboto {
+  font-family: Roboto, sans-serif;
+}
 
 body {
-  font-family: var(--font-family);
+  font-family: Roboto;
+  background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 35%,
+      rgba(0, 212, 255, 1) 100%
+  );
 }
+
