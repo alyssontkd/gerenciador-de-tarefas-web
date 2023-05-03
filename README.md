@@ -35,3 +35,18 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 "node_modules/primeng/resources/primeng.min.css",
 "style.css",
 ```
+
+## Criar Modulos
+```
+ ng g module modules/tarefas
+```
+
+## Criar Service
+```
+ng g service modules/tarefas/service/tarefa 
+```
+
+## Criar Componentes
+```
+ng g component modules/tarefas/components/listar-tarefa
+```

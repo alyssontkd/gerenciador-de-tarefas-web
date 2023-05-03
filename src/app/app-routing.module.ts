@@ -1,7 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { TarefaRoutes} from "./modules";
+
+export const routes: Routes = [
+  {
+    path: '',
+    redirectTo: '/tarefas/listar-tarefa',
+    pathMatch: 'full'
+  },
+  ...TarefaRoutes
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
