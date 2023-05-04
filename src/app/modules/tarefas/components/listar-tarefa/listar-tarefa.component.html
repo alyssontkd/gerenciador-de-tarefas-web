@@ -1,9 +1,9 @@
 <h1>Lista de tarefas</h1>
 
 <div style="text-align: right;">
-  <p-button label="Voltar" icon="pi pi-arrow-left" styleClass="p-button-danger" badgeClass="p-badge-danger"></p-button>
+  <p-button label="Voltar" icon="pi pi-arrow-left" styleClass="p-button-danger" badgeClass="p-badge-danger" routerLink="#"></p-button>
   &nbsp;
-  <p-button label="Novo" icon="pi pi-users" styleClass="p-button-warning" badgeClass="p-badge-warning"></p-button>
+  <p-button label="Novo" icon="pi pi-users" styleClass="p-button-warning" badgeClass="p-badge-warning" routerLink="/tarefas/cadastrar"></p-button>
 </div>
 <div style="text-align: right;">
   &nbsp;
@@ -18,6 +18,7 @@
   <ng-template pTemplate="header">
     <tr>
       <th>#</th>
+      <th>#</th>
       <th>Código</th>
       <th>Tarefa</th>
       <th>Ações</th>
@@ -25,11 +26,12 @@
   </ng-template>
   <ng-template let-tarefa pTemplate="body">
     <tr>
-      <td class="text-sm border-1" style="width: 3%"><p-checkbox [value]="tarefa.id" inputId="id-tarefa"></p-checkbox></td>
+      <td class="text-sm border-1" style="width: 3%"><p-checkbox [(ngModel)]="tarefa.concluida" inputId="id-tarefa" [binary]="true"></p-checkbox></td>
+      <td class="text-sm border-1" style="width: 3%" ><input type="checkbox"[value]="tarefa.id" inputId="id-tarefa" [checked]="tarefa.concluida"/></td>
       <td class="text-sm border-1" style="width: 3%">{{ tarefa.id }}</td>
       <td class="text-sm border-1" style="width: 70%">{{ tarefa.nome }}</td>
       <td class="text-sm border-1 align-items-center" style="width: 25%">
-        <p-button label="Editar" icon="pi pi-check" styleClass="p-button-info" badgeClass="p-badge-info"></p-button>
+        <p-button label="Editar" icon="pi pi-pencil" styleClass="p-button-info" badgeClass="p-badge-info"></p-button>
         &nbsp;
         <p-button label="Excluir" icon="pi pi-times" styleClass="p-button-danger" badgeClass="p-badge-danger"></p-button>
       </td>

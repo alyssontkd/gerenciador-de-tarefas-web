@@ -49,4 +49,5 @@ ng g service modules/tarefas/service/tarefa
 ## Criar Componentes
 ```
 ng g component modules/tarefas/components/listar-tarefa
+ng g component modules/tarefas/components/cadastrar-tarefa
 ```

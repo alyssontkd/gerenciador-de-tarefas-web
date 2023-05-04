@@ -11,6 +11,7 @@ import {TarefaModel} from "../../models";
 export class ListarTarefaComponent implements OnInit {
 
   tarefas: TarefaModel[]; //Este atributo é disponibilizado automaticamente na view
+
   constructor(private tarefaService: TarefaService) {}
   ngOnInit() {
     this.tarefas = this.listarTodos();
@@ -28,8 +29,5 @@ export class ListarTarefaComponent implements OnInit {
   listarTodos(): TarefaModel[]{
     return this.tarefaService.listarTodos();
   }
-
-
-
 
 }
